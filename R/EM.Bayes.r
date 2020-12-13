@@ -9,7 +9,7 @@
 #' @details This functions gives a Maximum A Posteriori for the parameter of a 
 #' Gaussian mixture \eqn{pi*N(mu1, sigma1^2) + (1-pi)*N(mu2, sigma2^2)}.
 #' @details The prior on pi is a Beta distribution. There's a prior on 
-#' \eqn{r = sigma2^2/sigma1^2}, which is a \eqn{gamma(lambda + 1, lambda)}.
+#' \eqn{r = sigma1^2/sigma2^2}, which is a \eqn{gamma(lambda + 1, lambda)}.
 #' 
 #' @details The default values for the prior parameters correspond to flat priors.
 #' 

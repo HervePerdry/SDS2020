@@ -54,6 +54,6 @@ NumericVector EMbayes(NumericVector x, double alpha = 0, double beta = 0, double
   if(verbose)
     Rcout << "Algorithm stopped after " << k << " iterations\n";
   
-  NumericVector R = NumericVector::create(_["pi"] = pi, _["mu1"] = mu1, _["mu2"] = mu2, _["s1"] = s1, _["s2"] = s2);
+  NumericVector R = NumericVector::create(_["pi"] = pi, _["mu1"] = mu1, _["mu2"] = mu2, _["s1"] = s1*s1, _["s2"] = s2*s2);
   return R;
 }
