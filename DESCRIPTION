@@ -1,0 +1,12 @@
+Package: SDS2020
+Type: Package
+Title: Just a package for the M2 SDS
+Version: 1.0
+Date: 2020-12-13
+Author: Hervé Perdry
+Maintainer: Hervé Perdry <herve.perdry@gmail.com>
+Description: For pedagogical use only.
+License: GPL (>= 2)
+Imports: Rcpp (>= 1.0.5)
+LinkingTo: Rcpp
+RoxygenNote: 7.1.1
