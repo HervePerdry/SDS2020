@@ -25,6 +25,10 @@ NumericVector EMbayes(NumericVector x, double alpha = 0, double beta = 0, double
     
     double Stau = std::accumulate(tau.begin(), tau.end(), 0.0);
     pi = (Stau + alpha) / ((double) n + alpha + beta);
+    if(pi != pi) {
+      pi = piOld;
+      break;
+    }
     
     mu1 = mu2 = 0;
     for(int i = 0; i < n; i++) {
